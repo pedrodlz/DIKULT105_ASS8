@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+}
+
+.wrapper {
+  padding: 0 7em 2em 3em;
+  width: 100%;
+}
+
+.timeline {
+  position: fixed;
+  top: 150px;
+  right:20px;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  margin: 20px 0;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.timeline ul a{
+    text-decoration: none;
+    color: #bfc1c3;
+}
+
+.timeline ul a:hover {
+  color: #000;
+}
+
+.timeline ul li:active{
+    background-color: coral;
+}
+
