@@ -2,6 +2,22 @@ h1{
     text-align: center;
 }
 
+#menu ul{
+  list-style-type: none;
+}
+
+#intro{
+  padding: 1.5em;
+}
+
+#intro img{
+  display:block;
+}
+
+#intro a{
+  text-align: center;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
 html {
   box-sizing: border-box;
