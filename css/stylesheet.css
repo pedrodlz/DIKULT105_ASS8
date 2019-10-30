@@ -1,9 +1,36 @@
-h1{
-    text-align: center;
+*{
+  padding:0px;
+  margin:0px;
+}
+body{
+  margin:0;
+}
+.common{
+  /*border:black solid 1px;*/
+  width:1240px;
+  margin:0 auto;
+  height:620px;
 }
 
-#menu{
-  border: gray solid 1px;
+.holdTop{
+  position: fixed;
+  top:0px;
+  left:100px;
+  background-color:white;
+  overflow: hidden;
+  width:1240px;
+
+}
+
+h1{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    height:620px;
+}
+
+#menu nav{
+  margin:0px;
 }
 
 #menu ul{
@@ -11,22 +38,27 @@ h1{
   margin: 0;
   padding: 0;
   overflow: hidden;
+  border:black solid 1px;
+  margin:0 auto;
+
+
 }
 
 #menu ul li{
   float:left;
 }
-
 #menu ul li a{
   display:block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  width:200px;
+  border: 1px solid red;
+}
+#menu a:hover{
+  background-color: grey;
 }
 
-#intro{
-  padding: 1.5em;
-}
 
 #intro img{
   display:block;
@@ -35,7 +67,16 @@ h1{
 #intro a{
   text-align: center;
 }
-
+#Furnitures,#clothes,#Technolgy{
+  position:relative;
+}
+section .more{
+  width:100px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  text-align: center;
+}
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
 html {
   box-sizing: border-box;
@@ -85,4 +126,3 @@ body {
 .timeline ul li:active{
     background-color: coral;
 }
-
