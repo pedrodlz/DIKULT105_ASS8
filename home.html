@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- GIVE THE BROWSER INSTRUCTIONS TO CONTROL DIMENSIONS AND SCALLING-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Upcycling</title>
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body>
-		<header class="common">
+		<!--<header class="common">
 			<nav id="menu" class="holdTop">
 				<ul>
 					<li><a href="" style="border-right:none">Home</a></li>
@@ -16,48 +18,52 @@
 				</ul>
 			</nav>
 			<h1>Bergen Upcycling</h1>
-		</header>
+		</header>-->
 
-		<main>
-
-			<section  id="intro" class="common">
-				<h2>What is upcycling?</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia lobortis justo vitae congue. Proin quis urna vitae tortor tincidunt volutpat. Quisque lacinia orci in dui eleifend ullamcorper vitae vel nisi. Curabitur dignissim vestibulum massa a tempus. Morbi luctus mi nec magna elementum ultrices. Nam eget ultricies justo. Nam cursus eu purus ac imperdiet. In commodo nibh lectus. Integer commodo sit amet lacus eget porttitor. Proin bibendum massa mi, et maximus ligula maximus sit amet.</p>
-				<img src="imgs/pic.png">
-				<a href="#">&darr;</a>
+		<main class="scrolling">
+			<section  id="what" class="home_categories">
+				<div class="section_link">
+					<h2>What is upcycling?</h2>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia lobortis justo vitae congue. Proin quis urna vitae tortor tincidunt volutpat. Quisque lacinia orci in dui eleifend ullamcorper vitae vel nisi. Curabitur dignissim vestibulum massa a tempus. Morbi luctus mi nec magna elementum ultrices. Nam eget ultricies justo. Nam cursus eu purus ac imperdiet. In commodo nibh lectus. Integer commodo sit amet lacus eget porttitor. Proin bibendum massa mi, et maximus ligula maximus sit amet.</p>		
+				</div>
+				<a class="arrow_link" href="#why">&darr;</a>
 			</section>
 
-
-			<section  id="intro" class="common">
-				<h2>Why do upcycling</h2>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia lobortis justo vitae congue. Proin quis urna vitae tortor tincidunt volutpat. Quisque lacinia orci</p>
-				<img>
+			<section  id="why" class="home_categories">
+				<div class="section_link">
+					<h2>Why do upcycling</h2>
+					<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia lobortis justo vitae congue. Proin quis urna vitae tortor tincidunt volutpat. Quisque lacinia orci</p>
+				</div>
+				<a class="arrow_link" href="#clothes">&darr;</a>
 			</section>
 
-
-			<section id="clothes" class="common">
-				<h2>Clothes</h2>
-				<img>
-				<a href="#" class="more">More</a>
+			<section id="clothes" class="home_categories">
+				<a class="section_link" href="clothes.html">
+					<h2>Clothes</h2>
+					<p>There are a lot of benefits by buying second-hand clothing. You are reducing textile waste, being eco-friendly and creating a better recycling community. Bergen has a lot of second-hand stores that is dedicated to pre-owned clothes. We have picked out 3 of them based on location and popularity.</p>
+					<img src="imgs/clothes.jpg" alt="Paulina butikk, some shoes, a dress and some french hats">
+				</a>
+				<a class="arrow_link" href="#furnitures">&darr;</a>
 			</section>
 
-
-			<section id="Furnitures" class="common">
-				<h2>Furnitures</h2>
-				<img src="" alt="">
-				<a href="#" class="more">More</a>
+			<section id="furnitures" class="home_categories">
+				<a class="section_link" href="clothes.html">
+					<h2>Furnitures</h2>
+					<p>Buying furniture can be really expensive. By furnishing your home with second-hand pieces you are saving resource and reduce waste, in addition to buying high quality stuff. Because a piece of furniture is second- hand, it has already survived the test of time. Read more about our recommended stores in Bergen that sell second-hand furniture.</p>
+					<img src="imgs/clothes.jpg" alt="">
+				</a>
+				<a class="arrow_link" href="#collectors">&darr;</a>
 			</section>
 
-
-			<section id="Technolgy" class="common">
-				<h2> Technolgy </h2>
-				<img src="" alt="">
-				<a href="#" class="more" >More</a>
+			<section id="collectors" class="home_categories">
+				<a class="section_link" href="clothes.html">
+					<h2> Collector's items </h2>
+					<p>In this fast-fashion industry, the fascination for antique items has exploded. An antique item has a history attached to it, rare in design and is often hard to reproduce, which is contrary to the current trend where nearly everything is mass produced and distributed to almost every country. Read more about some of the stores that sell antique items in Bergen.</p>
+					<img src="imgs/clothes.jpg" alt="">
+				</a>
+				<a id="go_top" class="arrow_link" href="#what">Go top</a>
 			</section>
-
-
 		</main>
-
 
 		<footer class="common">
 			Copyright

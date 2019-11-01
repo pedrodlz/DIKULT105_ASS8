@@ -1,15 +1,23 @@
-*{
-  padding:0px;
-  margin:0px;
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+
+html{
+  scroll-behavior: smooth;
 }
+
 body{
   margin:0;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+  width:100vw;
+  background-color: #F2F2F2;
 }
+
+/*HEADER*/
+
 .common{
   /*border:black solid 1px;*/
   width:1240px;
   margin:0 auto;
-  height:620px;
 }
 
 .holdTop{
@@ -19,14 +27,12 @@ body{
   background-color:white;
   overflow: hidden;
   width:1240px;
-
 }
 
 h1{
     margin-top: 50px;
     display: block;
     text-align: center;
-    height:620px;
 }
 
 #menu nav{
@@ -40,13 +46,12 @@ h1{
   overflow: hidden;
   border:black solid 1px;
   margin:0 auto;
-
-
 }
 
 #menu ul li{
   float:left;
 }
+
 #menu ul li a{
   display:block;
   text-align: center;
@@ -55,44 +60,113 @@ h1{
   width:200px;
   border: 1px solid red;
 }
+
 #menu a:hover{
   background-color: grey;
 }
 
+/* MAIN */
 
-#intro img{
+/* Section categories */
+.home_categories{
+  box-sizing: border-box; /*padding include in the final width*/
+  display:flex;
+  flex-direction: column;
+  padding:2em;
+  height: 100vh;/* Makes all the section fill the screen height*/
+}
+
+.home_categories h2{
+  margin-top:0;
+}
+
+.home_categories p{
+  font-size:16px;
+}
+
+/* When screen is bigger than 700px */
+@media only screen and (min-width:700px){
+
+  .home_categories{
+    flex-direction: row;
+    height: 250px;
+    padding-left:100px;
+    padding-right:100px;
+  }
+
+  .section_link{
+    display:flex;
+    flex-direction: row;
+    padding-right:50px;
+  }
+
+  .section_link h2{
+    margin-right:50px; 
+  }
+
+  .section_link p{
+    padding-right:50px;
+  }
+
+  .home_categories img{  
+    height: 25vh;
+  }
+
+  .section_link{/* Makes all section not clickable */
+    pointer-events: none; 
+    cursor: default;
+  }  
+}/*@media only screen and (min-width:700px)*/
+
+.home_categories img{
+  height:20vh;
+  max-height: 225px;
+  display: block;
+  margin:auto;
+  /*padding:1em;*/
+  box-shadow: 10px 10px #D9BC66; /*it doesnt work with padding*/
+}
+
+.section_link{
+  text-decoration: none;
+}
+
+.section_link:link{
+  color:#1A1E26;
+}
+
+.section_link:visited{
+  color:#1A1E26;
+}
+
+.arrow_link{
   display:block;
-}
-
-#intro a{
   text-align: center;
-}
-#Furnitures,#clothes,#Technolgy{
-  position:relative;
-}
-section .more{
-  width:100px;
-  position:absolute;
-  bottom:10px;
-  right:10px;
-  text-align: center;
-}
-@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
-html {
-  box-sizing: border-box;
+  text-decoration: none;
+  background-color: #733641;
+  padding:3vh;
+  margin-top: auto; /* pushes the above elements to stay at the bottom */
+  font-size: 3vh;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+#go_top{
+  color:#F2F2F2;
+  background-color:#1A1E26;
 }
 
-body {
-  font-family: 'Exo 2', sans-serif;
-  line-height: 1.5;
+.arrow_link:link{
+  color:#1A1E26;
 }
 
+.arrow_link:visited{
+  color:#1A1E26;
+}
+
+#why,#furnitures{
+  background-color: #d4d6d8;
+}
+
+/* THIS CODE IS FOR THE PRE-TIMELINE*/
 .wrapper {
   padding: 0 7em 2em 3em;
   width: 100%;
@@ -126,3 +200,4 @@ body {
 .timeline ul li:active{
     background-color: coral;
 }
+/*END OF PRE_TIMELINE*/
