@@ -10,6 +10,7 @@ body{
   line-height: 1.5;
   width:100vw;
   background-color: #F2F2F2;
+  color: #1A1E26;
 }
 
 /*HEADER*/
@@ -68,103 +69,153 @@ h1{
 /* MAIN */
 
 /* Section categories */
+
+#why,#home,#about{
+  background-color: #d4d6d8;
+}
+
 .home_categories{
   box-sizing: border-box; /*padding include in the final width*/
   display:flex;
   flex-direction: column;
-  padding:2em;
-  height: 100vh;/* Makes all the section fill the screen height*/
+  height: auto;
 }
 
 .home_categories h2{
-  margin-top:0;
+  width:100%;
+  margin:0;
+  padding-left:1em;
+  padding-right:1em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+
+#clothes h2{
+  background-color: #D9BC66;
+}
+
+#clothes img{
+  box-shadow: 10px 10px #D9BC66; /*it doesnt work with padding*/
+}
+
+#clothes .category_link{
+  background-color: #D9BC66;
+}
+
+#home h2{
+  background-color: #586F8C;
+}
+
+#home img{
+  box-shadow: 10px 10px #586F8C; /*it doesnt work with padding*/
+}
+
+#home .category_link{
+  background-color: #586F8C;
+}
+
+#collectors h2{
+  background-color: #BDBEBF;
+}
+
+#collectors img{
+  box-shadow: 10px 10px #BDBEBF; /*it doesnt work with padding*/
+}
+
+#collectors .category_link{
+  background-color: #BDBEBF;
+}
+
+#about h2{
+  background-color: #1A1E26;
+  color:#F2F2F2;
+}
+
+#about img{
+  box-shadow: 10px 10px #1A1E26; /*it doesnt work with padding*/
+}
+
+#about .category_link{
+  background-color: #1A1E26;
+  color:#F2F2F2;
 }
 
 .home_categories p{
   font-size:16px;
+  padding:1.5em;
+  margin:0;
 }
-
-/* When screen is bigger than 700px */
-@media only screen and (min-width:700px){
-
-  .home_categories{
-    flex-direction: row;
-    height: 250px;
-    padding-left:100px;
-    padding-right:100px;
-  }
-
-  .section_link{
-    display:flex;
-    flex-direction: row;
-    padding-right:50px;
-  }
-
-  .section_link h2{
-    margin-right:50px; 
-  }
-
-  .section_link p{
-    padding-right:50px;
-  }
-
-  .home_categories img{  
-    height: 25vh;
-  }
-
-  .section_link{/* Makes all section not clickable */
-    pointer-events: none; 
-    cursor: default;
-  }  
-}/*@media only screen and (min-width:700px)*/
 
 .home_categories img{
-  height:20vh;
-  max-height: 225px;
+  position:relative;
+  width:75%;
   display: block;
   margin:auto;
+  right:8px;
   /*padding:1em;*/
-  box-shadow: 10px 10px #D9BC66; /*it doesnt work with padding*/
 }
 
-.section_link{
-  text-decoration: none;
-}
-
-.section_link:link{
-  color:#1A1E26;
-}
-
-.section_link:visited{
-  color:#1A1E26;
-}
-
-.arrow_link{
+.category_link{
   display:block;
   text-align: center;
   text-decoration: none;
-  background-color: #733641;
-  padding:3vh;
-  margin-top: auto; /* pushes the above elements to stay at the bottom */
-  font-size: 3vh;
+  padding:0.9em;
+  margin:1.8em;
 }
 
-#go_top{
-  color:#F2F2F2;
-  background-color:#1A1E26;
-}
-
-.arrow_link:link{
+.category_link:link{
   color:#1A1E26;
 }
 
-.arrow_link:visited{
+.category_link:visited{
   color:#1A1E26;
 }
 
-#why,#furnitures{
-  background-color: #d4d6d8;
-}
+/* When screen is bigger than 700px */
+@media only screen and (min-width:900px){
+
+  #what h2, #why h2{
+    width:250px;
+  }
+
+  #what p, #why p{
+    width:95%;
+  }
+
+  .home_categories{
+    display:table;
+    height: auto;
+    padding:4em;
+    width:100%;
+  }
+
+  .home_categories h2{
+    width:200px;
+  }
+
+  .home_categories p{
+    width:55%;
+    float:left;
+  }
+
+  .section_link{
+    width:35%;
+  }
+
+  .home_categories img{
+    width:35%;
+    margin:0;
+    float:right;
+  }
+
+  .category_link{
+    width:auto;
+    float:left;
+    margin:0;
+    margin-left:24px;
+    padding:0.6em;
+  }
+}/*@media only screen and (min-width:700px)*/
 
 /* THIS CODE IS FOR THE PRE-TIMELINE*/
 .wrapper {
