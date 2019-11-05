@@ -103,27 +103,27 @@ h1{
 }
 
 #home h2{
-  background-color: #586F8C;
+  background-color: #69A4B3;
 }
 
 #home img{
-  box-shadow: 10px 10px #586F8C; /*it doesnt work with padding*/
+  box-shadow: 10px 10px #69A4B3; /*it doesnt work with padding*/
 }
 
 #home .category_link{
-  background-color: #586F8C;
+  background-color: #69A4B3;
 }
 
 #collectors h2{
-  background-color: #BDBEBF;
+  background-color: #A5AFBF;
 }
 
 #collectors img{
-  box-shadow: 10px 10px #BDBEBF; /*it doesnt work with padding*/
+  box-shadow: 10px 10px #A5AFBF; /*it doesnt work with padding*/
 }
 
 #collectors .category_link{
-  background-color: #BDBEBF;
+  background-color: #A5AFBF;
 }
 
 #about h2{
@@ -176,6 +176,7 @@ h1{
 
   #what h2, #why h2{
     width:250px;
+    padding-left:0;
   }
 
   #what p, #why p{
@@ -186,16 +187,21 @@ h1{
     display:table;
     height: auto;
     padding:4em;
+    padding-left:15em;
+    padding-right:15em;
     width:100%;
   }
 
   .home_categories h2{
     width:200px;
+    margin-bottom:2em;
   }
 
   .home_categories p{
     width:55%;
     float:left;
+    margin-bottom:4em;
+    padding:0;
   }
 
   .section_link{
@@ -204,16 +210,16 @@ h1{
 
   .home_categories img{
     width:35%;
+    max-width: 400px;
     margin:0;
     float:right;
   }
 
   .category_link{
-    width:auto;
-    float:left;
+    width:120px;
     margin:0;
-    margin-left:24px;
     padding:0.6em;
+    clear:left;
   }
 }/*@media only screen and (min-width:700px)*/
 
