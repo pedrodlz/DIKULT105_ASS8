@@ -88,7 +88,7 @@ body{
 
 .home_categories p{
   font-size:16px;
-  padding:1.5em;
+  padding:2em;
   margin:0;
 }
 
@@ -97,6 +97,7 @@ body{
   width:75%;
   display: block;
   margin:auto;
+  margin-bottom:10px;
   right:8px;
   /*padding:1em;*/
 }
@@ -105,7 +106,7 @@ body{
   display:block;
   text-align: center;
   text-decoration: none;
-  padding:0.9em;
+  padding:0.8em;
   margin:1.8em;
 }
 
@@ -116,88 +117,6 @@ body{
 .category_link:visited{
   color:#1A1E26;
 }
-
-/* When screen is bigger than 700px */
-@media only screen and (min-width:900px){
-
-  #what h2, #why h2{
-    width:250px;
-    padding-left:0;
-  }
-
-  #what p, #why p{
-    width:95%;
-  }
-
-  .home_categories{
-    width:100%;
-  }
-
-  .home_categories section{
-    display:table;
-    height: auto;
-    padding:4em;
-    padding-left:8em;
-    padding-right:8em;
-    width:65%;
-    margin:auto;
-  }
-
-  .home_categories h2{
-    width:200px;
-    margin-bottom:2em;
-  }
-
-  .home_categories p{
-    width:45%;
-    float:left;
-    padding-right:100px;
-    padding:0;
-  }
-
-  .section_link{
-    width:35%;
-    /*Disable link*/
-    pointer-events: none;
-    cursor: default;
-  }
-
-  .home_categories img{
-    width:45%;
-    max-width: 350px;
-    margin:auto;
-  }
-
-  .category_link{
-    width:120px;
-    margin:0;
-    padding:0.6em;
-    clear:both;
-  }
-
-  footer{
-    text-align:left;
-    height: auto;
-  }
-
-  footer > div{
-    width:80%;
-    margin:auto;
-  }
-
-  #logo{
-    float:left;
-  }
-
-  .footer_section{
-    width:35%;
-    float:left;
-  }
-
-  #copyright{
-    display:inline-block;
-  }
-}/*@media only screen and (min-width:700px)*/
 
 /*END OF MAIN*/
 
@@ -277,38 +196,176 @@ footer h2{
 }
 /*END OF FOOTER*/
 
-/* THIS CODE IS FOR THE PRE-TIMELINE*/
-.wrapper {
-  padding: 0 7em 2em 3em;
-  width: 100%;
-}
+/* When screen is bigger than 900px */
+@media only screen and (min-width:900px){
 
+  #what h2, #why h2{
+    width:250px;
+    padding-left:0;
+  }
+
+  #what p, #why p{
+    width:95%;
+  }
+
+  .home_categories{
+    width:100%;
+  }
+
+  .home_categories section{
+    display:table;
+    height: auto;
+    padding:4em;
+    padding-left:8em;
+    padding-right:8em;
+    width:65%;
+    margin:auto;
+  }
+
+  .home_categories h2{
+    width:200px;
+    margin-bottom:2em;
+  }
+
+  .home_categories p{
+    width:45%;
+    float:left;
+    padding-right:100px;
+    padding:0;
+  }
+
+  .section_link{
+    width:55%;
+    float: left;    
+    margin:0;
+    padding:0;
+  }
+
+  .home_categories img{
+    width:100%;
+    max-width: 350px;
+    margin-left:auto;
+    margin-right: 0;
+  }
+
+  .category_link{
+    width:120px;
+    margin:0;
+    padding:0.6em;
+    clear:left;
+  }
+
+  footer{
+    text-align:left;
+    height: auto;
+  }
+
+  footer > div{
+    width:80%;
+    margin:auto;
+  }
+
+  #logo{
+    float:left;
+  }
+
+  .footer_section{
+    width:35%;
+    float:left;
+  }
+
+  .footer_section h2{
+    width:270px;
+    margin:auto;
+
+  }
+
+  #copyright{
+    display:inline-block;
+    text-align: center;
+  }
+
+  .timeline{
+    display:none;
+  }
+
+  /* Subnavigtion 
 .timeline {
   position: fixed;
   top: 150px;
-  right:20px;
+  left:20px;
+  right:0;
+  padding:0;
+  margin:0;
+  height:150px;
+  border: 1px dotted white;
+  background-color: transparent;
+  display:inline-table;
+  clear:both;
 }
 
 .timeline ul {
-  list-style: none;
+
+  border: 1px dotted white;
+  width:150px;
+  padding:0;
+  margin:0;
 }
 .timeline ul li {
-  margin: 20px 0;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  padding:0;
+  margin:0;
+  border: 1px dotted white;
   cursor: pointer;
   transition: all .3s ease-out;
+  float:none;
+  width:150px;
+  text-align:left;
 }
 
 .timeline ul a{
-    text-decoration: none;
-    color: #bfc1c3;
+  border: 1px dotted red;
+  width:150px;
 }
 
 .timeline ul a:hover {
   color: #000;
 }
+*/
+/* end of subnavigation */
+}/*@media only screen and (min-width:700px)*/
 
-.timeline ul li:active{
-    background-color: coral;
+/* Subnavigtion */
+.timeline {
+  position: fixed;
+  bottom: 0;
+  background-color:black;
+  width:100%;
+  padding:0;
+  z-index:+1;
 }
-/*END OF PRE_TIMELINE*/
+
+.timeline ul {
+  list-style: none;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.timeline ul li {
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  width:32.9%;
+  float:left;
+}
+
+.timeline ul a{
+    text-decoration: none;
+    color: white;
+    padding:1em;
+    display:block;
+}
+
+.timeline ul a:hover {
+  color: red;
+}
+/* end of subnavigation */

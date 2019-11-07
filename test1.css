@@ -6,7 +6,6 @@ body, html {
   font-weight: 200;
 }
 .dropdown{
-  display: none;
 }
 
 .header {
@@ -187,8 +186,6 @@ p{
   .stroke{
     display: none;
   }
-
-
   
   .dropbtn {
     background-color:grey;
@@ -196,8 +193,7 @@ p{
     color: white;
     padding: 16px;
     font-size: 16px;
-    border: none;
-    
+    border: none;    
   }
   
   .dropdown {

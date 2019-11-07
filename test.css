@@ -5,26 +5,26 @@ body, html {
   font-family: 'Dosis';
   font-weight: 200;
 }
+
+header{
+  position:sticky;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: right;
+  display:table;
+}
+
 .dropdown{
   display: none;
 }
 
-.header {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: right;
-  position: relative;
-}
 .logo {
-  position: sticky;
-  top: 0;
   float: left;
   font-size: 32px;
   font-weight: 300;
   padding: 15px;
-  border-right: 1px solid black;
   }
 
 nav ul li {
@@ -141,6 +141,10 @@ p{
   border-width: 0px 0 2px 2px;
 }
 
+#menu{
+  display:none;
+}
+
 @keyframes bounce {
   0%,
   100%,
@@ -171,15 +175,16 @@ p{
     display: block;
     text-align: right;
   }
-  .logo {
-    position: sticky;
-    top: 0;
-    float: left;
-    font-size: 32px;
-    padding: 15px;
-    border-right: 1px solid black;
-    padding: 2px;
-    }
+
+.logo {
+  position: sticky;
+  top: 0;
+  float: left;
+  font-size: 32px;
+  padding: 15px;
+  border-right: 1px solid black;
+  padding: 2px;
+  }
   
 .header-right {
     float: none;
@@ -189,6 +194,7 @@ p{
   }
 
 .dropdown{
+  display:inline;
   position: relative;
   top: 0;
 }
