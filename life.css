@@ -1,0 +1,133 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+main{
+  z-index:-1;
+}
+
+
+************************************/
+section{
+    padding: 0;
+}
+.categories {
+  width: 100vw;
+  height:171.42vw;/*auto;*/
+  border: black 1px solid;
+}
+
+.categories .illustration{
+  /*margin-top: 13.03vw;*/
+  width:100vw;
+  height:82.79vw;/*568px;*/
+  /*background-image: url("imgs/2ndlove_back2.jpg");*/
+  background-color: #F0DE87;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.categories .text{
+  width:95vw;
+  height:auto;margin: 0 auto;
+  background-size: cover;
+}
+
+.categories .text h2{
+
+  font-weight:normal;
+  font-size:8vw;
+  /*font-family: 'Monoton', cursive;*/
+  margin-left: 5vw;
+}
+
+.categories .text .head img{
+  width:11.5vw;
+  height: auto;
+  float:left;
+}
+
+.categories .text h3{
+  font-size:5vw;
+}
+
+.categories p{
+  font-size:4vw;
+}
+
+@media only screen and (min-width:650px){
+  .categories {
+    margin-top:50px;
+    width: 100vw;
+    height:auto;/*171.42vw;/*auto;*/
+    border: black 1px solid;
+    margin-bottom: 20px;
+  }
+  .categories .illustration{
+    width:80vw;
+    height:49.674vw;/*568px;*/
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+  }
+
+.categories .text{
+  width:80vw;
+  height:auto;
+  margin: 0 auto;
+}
+
+.categories .text h2{
+
+  font-weight:normal;
+  font-size: 40px;/*8vw;*/
+  /*font-family: 'Monoton', cursive;*/
+  margin-left: 5vw;
+}
+
+.categories .text .head img{
+  width:60px;/*2vw;*/
+  height: auto;
+  float:left;
+}
+
+.categories .text h3{
+  font-size:25px;/*5vw;*/
+  margin-bottom: 1vw;/*10px*/
+}
+
+.categories p{
+  font-size:16px;/*4vw;*/
+}
+
+}
+
+@media only screen and (min-width:1120px){
+.categories {
+    margin-top:50px;
+    width:100vw;
+    height:auto;/*height:100vh;/*auto;*/
+    margin-bottom: 20px;
+  }
+.categories  .illustration{
+    border: 1px blue solid;
+    float: left;
+    width:57.14vw;
+    height:35.35vw;/*568px;*/
+    margin: 0 auto;
+    margin-right:3.84vw;
+    margin-top:5vw;
+
+  }
+.categories .text{
+  float: left;
+  width:31.875vw;
+  height:35.3vw;
+  margin: 0 auto;
+  margin-right:2.14vw;
+  margin-top:5vw;
+}
+
+
+
+}
