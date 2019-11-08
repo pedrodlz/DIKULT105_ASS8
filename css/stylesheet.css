@@ -1,39 +1,143 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
 
 body{
   margin:0;
   font-family: 'Exo 2', sans-serif;
   line-height: 1.5;
-  width:100vw;
+  width:104vw;
   background-color: #F2F2F2;
   color: #1A1E26;
+  overflow-x: hidden;
   box-sizing:border-box; /*padding include in the final width*/
 }
 
 /*HEADER*/
+  .nav {
+    z-index:+1;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position:fixed;
+    top:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-links {
+    float: right;
+    font-size: 18px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  
+  .nav > .nav-links > a {
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    width: 100%;
+  }  
+
+  .nav > .nav-links > a,
+  .nav > .nav-links > a:after,
+  .nav > .nav-links >:before {
+  transition: all .5s;
+}
+  .nav > .nav-links > a {
+  position: relative;
+}
+.nav > .nav-links > a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav > .nav-links > a:hover:after {
+  width: 100%;
+}
+
+.nav > .nav-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.nav > .nav-btn > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2px solid black;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.nav > #nav-check:not(:checked) ~ .nav-links {
+  height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
 
 /* MAIN */ /* CODE BY CAND. 176*/
 
 /* Section categories */
 
+header,main, footer{
+  margin:0;
+  padding:0;
+}
+
 #why,#home,#about{
   background-color: #d4d6d8;
+}
+
+#what{
+  margin-top:50px;
 }
 
 .home_categories section{
   display:flex;
   flex-direction: column;
   height: auto;
-  width:100vw;
-}
-
-.home_categories h2{
-  width:100vw;
-  margin:0;
-  padding-left:1em;
-  padding-right:1em;
-  padding-top:0.5em;
-  padding-bottom:0.5em;
+  width:104vw;
+  padding:0;
 }
 
 #clothes h2{
@@ -86,6 +190,16 @@ body{
   color:#F2F2F2;
 }
 
+.home_categories h2{
+  box-sizing:border-box;  
+  width:100%;
+  margin:0;
+  padding-left:1em;
+  padding-right:1em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+
 .home_categories p{
   font-size:16px;
   padding:2em;
@@ -123,7 +237,7 @@ body{
 /* FOOTER */ /* CODE BY CAND. 176*/
 
 footer{
-  width:100vw;
+  width:104vw;
   background-color:#1A1E26;
   color:#F2F2F2;
   text-align:center;
@@ -132,6 +246,7 @@ footer{
 
 footer h2{
   font-size: 19px;
+  width:100%;
 }
 
 #logo{
@@ -197,7 +312,7 @@ footer h2{
 /*END OF FOOTER*/
 
 /* When screen is bigger than 900px */
-@media only screen and (min-width:900px){
+@media only screen and (min-width:650px){
 
   #what h2, #why h2{
     width:250px;
@@ -242,7 +357,7 @@ footer h2{
   }
 
   .home_categories img{
-    width:100%;
+    width:35vw;
     max-width: 350px;
     margin-left:auto;
     margin-right: 0;
