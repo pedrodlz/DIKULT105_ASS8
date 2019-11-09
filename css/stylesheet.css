@@ -65,18 +65,7 @@ body{
   .nav > .nav-links > a {
   position: relative;
 }
-.nav > .nav-links > a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
+
 .nav > .nav-links > a:hover:after {
   width: 100%;
 }
@@ -93,9 +82,7 @@ body{
   height: 50px;
   padding: 13px;
 }
-.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 .nav > .nav-btn > label > span {
   display: block;
   width: 25px;
@@ -400,12 +387,12 @@ footer h2{
     text-align: center;
   }
 
-  .timeline{
+  .subnav{
     display:none;
   }
 
   /* Subnavigtion 
-.timeline {
+.subnav {
   position: fixed;
   top: 150px;
   left:20px;
@@ -419,14 +406,14 @@ footer h2{
   clear:both;
 }
 
-.timeline ul {
+.subnav ul {
 
   border: 1px dotted white;
   width:150px;
   padding:0;
   margin:0;
 }
-.timeline ul li {
+.subnav ul li {
   padding:0;
   margin:0;
   border: 1px dotted white;
@@ -437,12 +424,12 @@ footer h2{
   text-align:left;
 }
 
-.timeline ul a{
+.subnav ul a{
   border: 1px dotted red;
   width:150px;
 }
 
-.timeline ul a:hover {
+.subnav ul a:hover {
   color: #000;
 }
 */
@@ -450,7 +437,7 @@ footer h2{
 }/*@media only screen and (min-width:700px)*/
 
 /* Subnavigtion */
-.timeline {
+.subnav {
   position: fixed;
   bottom: 0;
   background-color:black;
@@ -459,13 +446,13 @@ footer h2{
   z-index:+1;
 }
 
-.timeline ul {
+.subnav ul {
   list-style: none;
   width:100%;
   margin:0;
   padding:0;
 }
-.timeline ul li {
+.subnav ul li {
   text-align: center;
   cursor: pointer;
   transition: all .3s ease-out;
@@ -473,14 +460,14 @@ footer h2{
   float:left;
 }
 
-.timeline ul a{
+.subnav ul a{
     text-decoration: none;
     color: white;
     padding:1em;
     display:block;
 }
 
-.timeline ul a:hover {
+.subnav ul a:hover {
   color: red;
 }
 /* end of subnavigation */
