@@ -51,7 +51,8 @@ body{
 
 .nav {
   z-index:+1;
-  height: 55px;
+  height: 10%;    flex-direction: column;
+
   width: 100%;
   background-color: white;
   position:fixed;
