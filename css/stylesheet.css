@@ -377,9 +377,9 @@ footer h2{
   }
 
   .footer_section h2{
-    width:270px;
+    width:35%;
     margin:auto;
-
+    margin-bottom:10px;
   }
 
   #copyright{
