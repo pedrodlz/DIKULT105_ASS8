@@ -3,6 +3,15 @@
   margin:0;
 }
 
+body{
+  margin:0;
+  line-height: 1.5;
+  width:104vw;
+  color: #1A1E26;
+  overflow-x: hidden;
+  box-sizing:border-box; /*padding include in the final width*/
+}
+
 main{
   z-index:-1;
 }
@@ -13,6 +22,156 @@ p{
 .categorise{
   background-color: white;
 }
+
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.nav {
+  z-index:+1;
+  height: 10%;    flex-direction: column;
+
+  width: 100%;
+  background-color: white;
+  position:fixed;
+  top:0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+.nav-links2{
+  display: none;
+}
+.nav > .nav-links {
+  float: right;
+  font-size: 18px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #333;
+  height: 0px;
+  transition: all 0.3s ease-in;
+  overflow-y: hidden;
+  top: 50px;
+  left: 0px;
+}
+
+.nav > .nav-links > a {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: grey;
+  display: block;
+  width: 100%;
+}  
+
+.nav > .nav-links > a,
+.nav > .nav-links > a:after,
+.nav > .nav-links >:before {
+transition: all .5s;
+}
+.nav > .nav-links > a {
+position: relative;
+}
+
+.nav > .nav-links > a:hover:after {
+width: 100%;
+}
+
+.nav > .nav-btn {
+display: inline-block;
+position: absolute;
+right: 0px;
+top: 0px;
+}
+.nav > .nav-btn > label {
+display: inline-block;
+width: 50px;
+height: 50px;
+padding: 13px;
+}
+
+.nav > .nav-btn > label > span {
+display: block;
+width: 25px;
+height: 10px;
+border-top: 2px solid black;
+}
+
+.nav > #nav-check {
+display: none;
+}
+
+.nav > #nav-check:not(:checked) ~ .nav-links {
+height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+height: calc(100vh - 50px);
+overflow-y: auto;
+}
+
+/* Subnavigtion */
+.subnav {
+  position: fixed;
+  bottom: 0;
+  background-color:black;
+  width:100%;
+  padding:0;
+  z-index:+1;
+}
+
+.subnav ul {
+  list-style: none;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.subnav ul li {
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  width:32.9%;
+  float:left;
+}
+
+.subnav ul a{
+    text-decoration: none;
+    color: white;
+    padding:1em;
+    display:block;
+}
+
+.subnav ul a:hover {
+  color: red;
+}
+/* end of subnavigation */
 /************************************/
 
 section{
@@ -218,6 +377,78 @@ footer h2{
 /*END OF FOOTER*/
 
 @media only screen and (min-width:650px){
+
+  .nav-links {
+    display: none;
+  
+}
+.nav > .nav-links {
+display: none;
+}
+.nav{
+  margin-right: 2px;
+}
+  .timeline{
+    display:none;
+  }
+  /* sna013*/
+
+.nav > .nav-btn {
+    display: none;
+}
+.nav-links2 {
+      display: inline;
+      float: right;
+      font-size: 18px;
+      color: black;
+}
+.nav > .nav-links2 {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links2 > a {
+  display: inline-block;
+  padding: 13px 10px 7px 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+
+.nav > .nav-links2 > a,
+.nav > .nav-links2 > a:after,
+.nav > .nav-links2 >:before {
+transition: all .5s;
+}
+.nav > .nav-links2 > a {
+position: relative;
+}
+.nav > .nav-links2 > a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #aaa;
+height: 1px;
+}
+.nav > .nav-links2 > a:hover:after {
+width: 100%;
+
+}
+
+.nav > #nav-check {
+display: none;
+}
+
+.subnav{
+  display:none;
+}
+
   #intro {
       width: 100vw;
       height:50vw;
@@ -342,4 +573,34 @@ footer h2{
 }
 
 
+
+footer{
+  text-align:left;
+  height: auto;
+}
+
+footer > div{
+  width:80%;
+  margin:auto;
+}
+
+#logo{
+  float:left;
+}
+
+.footer_section{
+  width:35%;
+  float:left;
+}
+
+.footer_section h2{
+  width:35%;
+  margin:auto;
+  margin-bottom:10px;
+}
+
+#copyright{
+  display:inline-block;
+  text-align: center;
+}
 }
