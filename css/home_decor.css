@@ -1,0 +1,317 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+main{
+  z-index:-1;
+}
+
+p{
+  font-family:sans-serif;
+}
+
+/************************************/
+
+section{
+    padding: 0;
+}
+
+#intro {
+  margin-top: 50px;
+  background-image: url("../imgs/homer.png");
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:80vw;
+    z-index: -1;
+}
+#intro .back{
+  width:70vw;
+  height: 10vw;
+  margin: 0 auto;
+  padding-top: 30vw;
+}
+#intro .back img{
+    float: left;
+    width:10vw;
+}
+#intro .back h1{
+   float: left;
+   font-size: 8vw;
+   color:white;
+}
+
+
+.categories {
+  width: 100vw;
+  height:150vw;/*auto;*/
+}
+
+.categories .illustration{
+  width:100vw;
+  height:62vw;/*82.79vw;/*568px;*/
+  background-color: #69A4B3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nms .imgs_1{
+  float: left;
+  width:29.9%;
+  height:72.26%;
+  margin-left: 6.6%;
+  margin-top: 10.84%;
+  margin-right:4.8%;
+}
+#nms .imgs_2{
+  float: left;
+  width:55.5%;
+  height:59.68%;
+  margin-top:15.84%;
+}
+
+#fretex .imgs_1{
+  float: left;
+  width:50%;
+  height:80.6%;
+  margin-left: 6.6%;
+  margin-top:5%;
+  margin-right: 3%;
+}
+#fretex .imgs_2{
+  float: left;
+  width:33.7%;
+  height:81.61%;
+  margin-top:5%;
+}
+
+.categories .text{
+  width:95vw;
+  height:auto;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.categories .text h2{
+
+  font-weight:normal;
+  font-size:8vw;
+  margin-left: 5vw;
+}
+
+.categories .text .head img{
+  width:11.5vw;
+  height: auto;
+  float:left;
+}
+
+.categories .text .head{
+  margin-bottom: 20px;
+}
+
+
+.categories .text h3{
+  font-size:5vw;
+}
+.categories .text .intro{
+  margin-bottom: 10px;
+}
+
+.categories p{
+  font-size:4vw;
+}
+#nms{
+  background-color: white;/*#91BCC7;*/
+}
+#fretex{
+  background-color: #BAD5DC;
+}
+#nms .illustration{
+  background-color:#91BCC7;
+}
+
+
+/* FOOTER */ /* CODE BY CAND. 176*/
+
+footer{
+  width:104vw;
+  background-color:#1A1E26;
+  color:#F2F2F2;
+  text-align:center;
+  padding-top:2em;
+}
+
+footer h2{
+  font-size: 19px;
+  width:100%;
+}
+
+#logo{
+  width:35%;
+  max-width: 200px;
+  max-height:200px;
+  filter:invert(1);
+  margin-bottom: 20px;
+}
+
+.footer_section{
+  margin-bottom:20px;
+}
+
+.footer_section img{
+  width:30px;
+  float:left;
+}
+
+.social{
+  margin:auto;
+  margin-bottom:12px;
+  width:232px;
+}
+
+.social:after{
+  clear: both;
+  display:table;
+  content: "";
+}
+
+.social p{
+  float: left;
+  width: auto;
+  margin:0;
+  margin-left:5px;
+}
+
+#sitemap nav{
+  text-align:left;
+  margin:auto;
+}
+
+#sitemap nav a{
+  display: block;
+  margin:auto;
+  width:170px;
+}
+
+#sitemap nav a:link{
+  color:#d4d6d8;
+}
+
+#sitemap nav a:visited{
+  color:#d4d6d8;
+}
+
+#copyright{
+  width:100vw;
+  margin:0;
+  padding:0.5em;
+}
+/*END OF FOOTER*/
+
+@media only screen and (min-width:650px){
+  #intro {
+      width: 100vw;
+      height:50vw;
+  }
+  .categories {
+    padding-bottom:80px;
+    width: 100vw;
+    height:auto;/*171.42vw;/*auto;*/
+  }
+  .categories .illustration{
+    width:100vw;
+    height:62vw;/*568px;*/
+    margin: 0 auto;
+    /*margin-bottom: 20px;*/
+  }
+
+.categories .text{
+  width:80vw;
+  height:auto;
+  margin: 0 auto;
+}
+
+.categories .text h2{
+
+  font-weight:normal;
+  font-size: 40px;
+  margin-left: 5vw;
+}
+
+.categories .text .head img{
+  width:60px;
+  height: auto;
+  float:left;
+}
+
+.categories .text h3{
+  font-size:25px;/*5vw;*/
+  margin-bottom: 1vw;/*10px*/
+}
+
+.categories p{
+  font-size:20px;/*4vw;*/
+}
+
+}
+
+@media only screen and (min-width:1120px){
+.categories {
+      width:100vw;
+      height:38vw;
+    }
+
+  #nms .text{
+    float:left;
+    padding: 2vw;
+    width:35vw;/**57.14vw;*/
+    height:23.84vw;/*35.35vw;/*568px;*/
+    font-size: 1.2vw;
+    margin-top:8vw;
+  }
+
+  #nms  .illustration{
+      float: left;
+      width:45vw;/**57.14vw;*/
+      height:27.9vw;/*35.35vw;/*568px;*/
+      margin: 0 auto;
+      margin-left:7vw;
+      margin-right:1vw;
+      margin-top:8vw;
+
+    }
+
+#fretex .illustration{
+    float: right;
+    width:45vw;/**57.14vw;*/
+    height:27.9vw;/*35.35vw;/*568px;*/
+    margin: 0 auto;
+    margin-right:7vw;
+    margin-left:1vw;
+    margin-top:8vw;
+
+  }
+#fretex .text{
+  float:right;
+  padding: 2vw;
+  width:35vw;/**57.14vw;*/
+  height:23.84vw;/*35.35vw;/*568px;*/
+  font-size: 1.2vw;
+  margin-top:8vw;
+}
+
+.categories .text p{
+  font-size: 1.1vw;
+}
+.categories .text h2{
+  font-size: 3.5vw;
+}
+.categories  .text img{
+  height: 5vw;
+  weight:auto;
+}
+
+
+}
