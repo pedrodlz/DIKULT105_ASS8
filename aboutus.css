@@ -18,28 +18,18 @@
     padding-right: 1em;
   }
 
-
- .flex-container{
+ .images_aboutus{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 	
-.flex-container div{
-  		width: 100%;
+.images_aboutus img{
+  width: 100%;
 	margin: 10px;
-
-}
-.imgInBox{
-  height: 200px;
-  width:250px;
 }
 
-.imgInBox img {
-   display: block;
-   width: 100%;
-}
 /*.row {
   margin-left: 20%;
   display: -ms-flexbox; 

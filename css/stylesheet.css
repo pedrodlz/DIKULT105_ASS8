@@ -140,8 +140,38 @@ height: calc(100vh - 50px);
 overflow-y: auto;
 }
 
-/* MAIN */ /* CODE BY CAND. 176*/
+/* MAIN */ 
 
+/* About us */
+.aboutus{
+  margin-top:35px;
+  width:100vw;
+  padding-top:1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.aboutus p{
+  padding-left:0.5em;
+  padding-right:1em;
+}
+
+.aboutus h2{
+  padding:0.5em;
+  padding-bottom:0;
+}
+
+.images_aboutus{
+  width:85%;
+  margin:auto;
+  padding-right:1em;
+}
+
+.images_aboutus img{
+width: 100%;
+}
+
+/* CODE BY CAND. 176*/
 /* Section categories */
 
 header,main, footer{
