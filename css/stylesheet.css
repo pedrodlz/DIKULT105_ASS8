@@ -78,7 +78,7 @@ a {
 
 .nav {
   z-index:+1;
-  height: 8%;    
+  height: 3em;    
   flex-direction: column;
   width: 100%;
   background-color: white;
@@ -407,7 +407,7 @@ footer h2{
 
 .nav {
   z-index:+1;
-  height: 7%;    
+  height: 3em;    
   flex-direction: column;
   width: 100%;
   background-color: white;
