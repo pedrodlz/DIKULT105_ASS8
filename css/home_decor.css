@@ -221,7 +221,7 @@ section{
 
 .categories {
   display: table;
-  height:table;
+  height:auto;
   padding-bottom: 40px
 }
 
@@ -581,7 +581,7 @@ footer h2{
 }
 .categories .text .head img{
   height:32px;
-  weight:auto;
+  width:auto;
 }
 
 footer{

@@ -23,6 +23,9 @@ main{
 
 .categorise{
   background-color: white;
+  display: table;
+  height:auto;
+  padding-bottom: 40px
 }
 
 p{
