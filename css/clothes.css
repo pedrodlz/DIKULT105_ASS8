@@ -63,7 +63,7 @@ p{
 
 .nav {
   z-index:+1;
-  height: 3em;
+  height: 3em;    
   flex-direction: column;
   width: 100%;
   background-color: white;
@@ -219,6 +219,8 @@ overflow-y: auto;
 /**************************** start by main ***********************************************/
 
 .categorise {
+  display: table;
+  height:table;
   padding-bottom: 40px;
 }
 
@@ -406,7 +408,7 @@ footer h2{
 
   .nav {
     z-index:+1;
-    height: 3.5em;
+    height: 3.5em;    
     flex-direction: column;
     width: 100%;
     background-color: white;
@@ -414,10 +416,10 @@ footer h2{
     top:0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
+  
   .nav-links {
       display: none;
-
+  
   }
   .nav > .nav-links {
   display: none;
@@ -428,7 +430,7 @@ footer h2{
     .timeline{
       display:none;
     }
-
+  
   .nav > .nav-btn {
       display: none;
   }
@@ -443,15 +445,15 @@ footer h2{
     float: right;
     font-size: 18px;
   }
-
+  
   .nav > .nav-links2 > a {
     display: inline-block;
     padding: 13px 10px 7px 10px;
     text-decoration: none;
     color: grey;
   }
-
-
+  
+  
   .nav > .nav-links2 > a,
   .nav > .nav-links2 > a:after,
   .nav > .nav-links2 >:before {
@@ -474,9 +476,9 @@ footer h2{
   }
   .nav > .nav-links2 > a:hover:after {
   width: 100%;
-
+  
   }
-
+  
   .nav > #nav-check {
   display: none;
   }
@@ -541,7 +543,7 @@ footer h2{
   main{
     margin-bottom: 0;
   }
-
+ 
 .categorise {
       width:100vw;
       height:38vw;
