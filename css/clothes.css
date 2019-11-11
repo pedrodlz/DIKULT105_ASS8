@@ -1,10 +1,12 @@
 *{
+  line-height: 1.5;
   padding:0;
   margin:0;
 }
 
 main{
   z-index:-1;
+  margin-bottom: 80px;
 }
 
 p{
@@ -77,7 +79,7 @@ p{
   color: grey;
   display: block;
   width: 100%;
-}  
+}
 
 .nav > .nav-links > a,
 .nav > .nav-links > a:after,
@@ -175,11 +177,11 @@ overflow-y: auto;
   width:70vw;
   height: 10vw;
   margin: 0 auto;
-  padding-top: 30vw;
+  padding-top: 56vw;
 }
 #intro .back img{
     float: left;
-    width:10vw;
+    width:9vw;
 }
 #intro .back h1{
    float: left;
@@ -248,38 +250,35 @@ overflow-y: auto;
 }
 /************************text setting to common ***************************/
 .categorise .text{
-  width:95vw;
+  width:85vw;
   height:auto;
   margin: 0 auto;
-  background-size: cover;
 }
 
 .categorise .text h2{
-
   font-weight:normal;
-  font-size:8vw;
-  margin-left: 5vw;
+  font-size:6vw;
 }
 
 .categorise .text .head img{
-  width:11.5vw;
+  width:9vw;
   height: auto;
   float:left;
 }
-
 .categorise .text .head{
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
+
 
 .categorise .text h3{
   font-size:5vw;
-}
-.categories .text .intro{
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .categorise p{
-  font-size:4vw;
+  font-size:16px;
 }
 /************************ specific background color for different sections ***************************/
 #secondlove, #fretex{
@@ -301,6 +300,7 @@ footer{
   color:#F2F2F2;
   text-align:center;
   padding-top:2em;
+  padding-bottom: 60px;
 }
 
 footer h2{
@@ -371,10 +371,12 @@ footer h2{
 /*END OF FOOTER*/
 /************************when width of screen bigger than 650px ***************************/
 @media only screen and (min-width:650px){
-
+  main{
+    margin-bottom: 0px;
+  }
   .nav-links {
     display: none;
-  
+
 }
 .nav > .nav-links {
 display: none;
@@ -447,6 +449,15 @@ display: none;
       width: 100vw;
       height:50vw;
   }
+  #intro .back{
+    padding-top: 30vw;
+  }
+  #intro .back h1{
+     font-size: 6vw;
+  }
+  #intro .back img{
+    width:7vw;
+  }
   .categorise {
     width: 100vw;
     height:auto;/*171.42vw;/*auto;*/
@@ -459,40 +470,41 @@ display: none;
     /*margin-bottom: 20px;*/
   }
 
-.categorise .text{
-  width:80vw;
-  height:auto;
-  margin: 0 auto;
-}
+  .categorise .text{
+    width:80vw;
+    height:auto;
+    margin: 0 auto;
+  }
 
-.categorise .text h2{
+  .categorise .text h2{
 
-  font-weight:normal;
-  font-size: 40px;
-  margin-left: 5vw;
-}
+    font-weight:normal;
+    font-size: 30px;
+  }
 
-.categorise .text .head img{
-  width:60px;
-  height: auto;
-  float:left;
-}
+  .categorise .text .head img{
+    width:40px;
+    height: auto;
+    float:left;
+  }
 
-.categorise .text h3{
-  font-size:25px;/*5vw;*/
-  margin-bottom: 1vw;/*10px*/
-}
+  .categorise .text h3{
+    font-size:25px;/*5vw;*/
+    margin-bottom: 1vw;/*10px*/
+  }
 
-.categorise p{
-  font-size:16px;/*4vw;*/
-}
-
+  .categorise p{
+    font-size:16px;/*4vw;*/
+  }
 
 }
 
 /************************when width of screen bigger than 1120px ***************************/
 
 @media only screen and (min-width:1120px){
+  main{
+    margin-bottom: 0;
+  }
 .categorise {
       width:100vw;
       height:38vw;
@@ -503,7 +515,6 @@ display: none;
     padding: 2vw;
     width:35vw;/**57.14vw;*/
     height:23.84vw;/*35.35vw;/*568px;*/
-    font-size: 1.2vw;
     margin-top:8vw;
   }
 
@@ -533,7 +544,6 @@ display: none;
   padding: 2vw;
   width:35vw;/**57.14vw;*/
   height:23.84vw;/*35.35vw;/*568px;*/
-  font-size: 1.2vw;
   margin-top:8vw;
 }
 
@@ -542,7 +552,6 @@ display: none;
   padding: 2vw;
   width:35vw;/**57.14vw;*/
   height:23.84vw;/*35.35vw;/*568px;*/
-  font-size: 1.2vw;
   margin-top:8vw;
 }
 
@@ -557,16 +566,25 @@ display: none;
 
   }
 
-.categorise .text p{
-  font-size: 1.1vw;
-}
-.categorise .text h2{
-  font-size: 3.5vw;
-}
-.categorise  .text img{
-  height: 5vw;
-  weight:auto;
-}
+  .categorise .text p{
+    clear: left;
+    font-size: 16px;
+  }
+  .categorise .text h2{
+    margin-left: 20px;
+    font-size: 2vw;
+    margin-bottom:10px;
+  }
+
+  .categorise .text h3{
+    margin-bottom:0;
+    margin-top:10px;
+    font-size: 20px;
+  }
+  .categorise .text .head img{
+    height:40px;
+  }
+
 
 footer{
   text-align:left;
