@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+
+
 *{
   padding:0;
   margin:0;
@@ -6,12 +11,28 @@
 main{
   z-index:-1;
 }
-
+body{
+  margin:0;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+  width:104vw;
+  background-color: #F2F2F2;
+  color: #1A1E26;
+  overflow-x: hidden;
+  box-sizing:border-box; /*padding include in the final width*/
+}
 p{
-  font-family:sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }
 
 /* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -35,8 +56,7 @@ p{
 
 .nav {
   z-index:+1;
-  height: 10%;    flex-direction: column;
-
+  height: 8%;    flex-direction: column;
   width: 100%;
   background-color: white;
   position:fixed;
@@ -59,7 +79,7 @@ p{
 }
 .nav > .nav-links {
   float: right;
-  font-size: 18px;
+  font-size: 25px;
   position: absolute;
   display: block;
   width: 100%;
@@ -493,6 +513,81 @@ display: none;
 /************************when width of screen bigger than 1120px ***************************/
 
 @media only screen and (min-width:1120px){
+ .nav {
+  z-index:+1;
+  height: 7%;    flex-direction: column;
+  width: 100%;
+  background-color: white;
+  position:fixed;
+  top:0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.nav-links {
+    display: none;
+  
+}
+.nav > .nav-links {
+display: none;
+}
+.nav{
+  margin-right: 2px;
+}
+  .timeline{
+    display:none;
+  }
+
+.nav > .nav-btn {
+    display: none;
+}
+.nav-links2 {
+      display: inline;
+      float: right;
+      font-size: 18px;
+      color: black;
+}
+.nav > .nav-links2 {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links2 > a {
+  display: inline-block;
+  padding: 13px 10px 7px 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+
+.nav > .nav-links2 > a,
+.nav > .nav-links2 > a:after,
+.nav > .nav-links2 >:before {
+transition: all .5s;
+}
+.nav > .nav-links2 > a {
+position: relative;
+}
+.nav > .nav-links2 > a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #aaa;
+height: 1px;
+}
+.nav > .nav-links2 > a:hover:after {
+width: 100%;
+
+}
+
+.nav > #nav-check {
+display: none;
+}
 .categorise {
       width:100vw;
       height:38vw;
