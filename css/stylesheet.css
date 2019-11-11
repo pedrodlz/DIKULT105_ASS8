@@ -14,8 +14,9 @@ body{
 }
 
 /*HEADER*/
-
-.bg-img {
+/* sna013*/
+.
+{
   background-image: url("../imgs/header.jpg");
   min-height: 380px;
   top:40px;
@@ -391,6 +392,16 @@ display: none;
     display:none;
   }
   /* sna013*/
+ .bg-img {
+  background-image: url("../imgs/header.jpg");
+  min-height: 550px;
+  top:40px;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .nav > .nav-btn {
     display: none;
@@ -445,6 +456,7 @@ display: none;
 }
 
 /* MAIN*/
+/* CODE BY CAND. 176*/
 
 
   #what h2, #why h2{
@@ -616,6 +628,7 @@ display: none;
 .subnav ul a:hover {
   color: red;
 }
+/* sna013*/
 .aboutus{
   margin-top:35px;
   width:100vw;
