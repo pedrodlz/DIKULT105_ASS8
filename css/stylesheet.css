@@ -477,12 +477,18 @@ footer h2{
   .aboutus p{
     padding-left:0.5em;
     padding-right:1em;
+    width: 60%;
+    text-align: left;
+    margin: auto;
   }
 
   .aboutus h2{
     padding:0.5em;
+    padding-left: 20%;
     padding-bottom:0;
+    
   }
+
 
   .images_aboutus{
     width: 400px;
