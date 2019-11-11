@@ -384,6 +384,9 @@ footer h2{
   main{
     margin-bottom:0;
   }
+  .subnav{
+    display:none;
+  }
   .nav {
     z-index:+1;
     height: 3.5em;    
