@@ -213,8 +213,9 @@ overflow-y: auto;
 /**************************** start by main ***********************************************/
 
 .categorise {
-  width: 100vw;
-  height:150vw;/*auto;*/
+  display: table;
+  height:table;
+  padding-bottom: 40px;
 }
 
 .categorise .illustration{
@@ -292,7 +293,7 @@ overflow-y: auto;
 
 
 .categorise .text h3{
-  font-size:5vw;
+  font-size:4vw;
   margin-top: 10px;
   margin-bottom: 5px;
 }
