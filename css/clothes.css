@@ -61,7 +61,8 @@ a {
 
 .nav {
   z-index:+1;
-  height: 8%;    flex-direction: column;
+  height: 8%;    
+  flex-direction: column;
   width: 100%;
   background-color: white;
   position:fixed;
