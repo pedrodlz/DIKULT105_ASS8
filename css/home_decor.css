@@ -57,7 +57,7 @@ a {
 
 .nav {
   z-index:+1;
-  height: 8%;    
+  height: 3em;    
   flex-direction: column;
   width: 100%;
   background-color: white;
@@ -377,14 +377,13 @@ footer h2{
   padding:0.5em;
 }
 /*END OF FOOTER*/
-/***
 @media only screen and (min-width:650px){
   main{
     margin-bottom:0;
   }
   .nav {
     z-index:+1;
-    height: 3em;    
+    height: 3.5em;    
     flex-direction: column;
     width: 100%;
     background-color: white;
@@ -510,7 +509,7 @@ footer h2{
     font-size:16px;/*4vw;*/
   }
 }
-/****
+
 @media only screen and (min-width:1120px){
   main{
     margin-bottom: 0;

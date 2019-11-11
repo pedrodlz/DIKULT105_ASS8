@@ -401,7 +401,7 @@ footer h2{
   }
   .nav {
     z-index:+1;
-    height: 3em;    
+    height: 3.5em;    
     flex-direction: column;
     width: 100%;
     background-color: white;
