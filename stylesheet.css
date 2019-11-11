@@ -14,8 +14,8 @@ body{
 }
 
 /*HEADER*/
-/* sna013*/
-.bg-img{
+
+.bg-img {
   background-image: url("../imgs/header.jpg");
   min-height: 380px;
   top:40px;
@@ -51,8 +51,8 @@ body{
 
 .nav {
   z-index:+1;
-  height: 10%;    
-  flex-direction: column;
+  height: 10%;    flex-direction: column;
+
   width: 100%;
   background-color: white;
   position:fixed;
@@ -63,11 +63,6 @@ body{
 .nav > .nav-header {
   display: inline;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
@@ -80,7 +75,7 @@ a {
 }
 .nav > .nav-links {
   float: right;
-  font-size: 25px;
+  font-size: 18px;
   position: absolute;
   display: block;
   width: 100%;
@@ -159,9 +154,6 @@ overflow-y: auto;
 .aboutus p{
   padding-left:0.5em;
   padding-right:1em;
-}
-.images_aboutus p{
-  text-align: center;
 }
 
 .aboutus h2{
@@ -391,16 +383,6 @@ display: none;
     display:none;
   }
   /* sna013*/
- .bg-img {
-  background-image: url("../imgs/header.jpg");
-  min-height: 550px;
-  top:40px;
-  opacity: 0.9;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
 .nav > .nav-btn {
     display: none;
@@ -455,7 +437,6 @@ display: none;
 }
 
 /* MAIN*/
-/* CODE BY CAND. 176*/
 
 
   #what h2, #why h2{
@@ -548,35 +529,83 @@ display: none;
     display:none;
   }
 
-  /* sna013*/
-.aboutus{
-  margin-top:35px;
-  width:100vw;
-  padding-top:1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  /* Subnavigtion 
+.subnav {
+  position: fixed;
+  top: 150px;
+  left:20px;
+  right:0;
+  padding:0;
+  margin:0;
+  height:150px;
+  border: 1px dotted white;
+  background-color: transparent;
+  display:inline-table;
+  clear:both;
 }
 
-.aboutus p{
-  padding-left:0.5em;
-  padding-right:1em;
+.subnav ul {
+
+  border: 1px dotted white;
+  width:150px;
+  padding:0;
+  margin:0;
+}
+.subnav ul li {
+  padding:0;
+  margin:0;
+  border: 1px dotted white;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  float:none;
+  width:150px;
+  text-align:left;
 }
 
-.aboutus h2{
-  padding:0.5em;
-  padding-bottom:0;
+.subnav ul a{
+  border: 1px dotted red;
+  width:150px;
 }
 
-.images_aboutus{
-  width: 400px;
-  height: auto;
-  padding: 1em;
+.subnav ul a:hover {
+  color: #000;
 }
-
-.images_aboutus img{
-  display: inline-block;
-  width: 100%;
-  height: 100%; 
-
-}
+*/
+/* end of subnavigation */
 }/*@media only screen and (min-width:700px)*/
+
+/* Subnavigtion */
+.subnav {
+  position: fixed;
+  bottom: 0;
+  background-color:black;
+  width:100%;
+  padding:0;
+  z-index:+1;
+}
+
+.subnav ul {
+  list-style: none;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.subnav ul li {
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  width:32.9%;
+  float:left;
+}
+
+.subnav ul a{
+    text-decoration: none;
+    color: white;
+    padding:1em;
+    display:block;
+}
+
+.subnav ul a:hover {
+  color: red;
+}
+/* end of subnavigation */

@@ -390,7 +390,7 @@ footer h2{
 }
 /*END OF FOOTER*/
 /************************when width of screen bigger than 650px ***************************/
-@media only screen and (min-width:650px){
+@media only screen and (min-width:700px){
   main{
     margin-bottom: 0px;
   }
