@@ -467,28 +467,28 @@ footer h2{
 
   /* sna013*/
   .aboutus{
+    display: block;
     margin-top:35px;
-    width:100vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    top: 0;
     padding-top:1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
   }
 
- .aboutus p{
-    padding-left:0.5em;
-    padding-right:1em;
+  .aboutus p{
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .aboutus h2{
-    padding:0.5em;
+    margin-left:20%;
     padding-bottom:0;
   }
-
 
   .images_aboutus{
     width: 400px;
     height: auto;
-    padding: 1em;
   }
 
   .images_aboutus img{
