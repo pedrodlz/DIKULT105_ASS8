@@ -54,11 +54,15 @@ p{
   background-color: #ddd;
   color: black;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .nav {
   z-index:+1;
-  height: 8%;    flex-direction: column;
+  height: 3em;    
+  flex-direction: column;
   width: 100%;
   background-color: white;
   position:fixed;
@@ -391,80 +395,86 @@ footer h2{
 }
 /*END OF FOOTER*/
 /************************when width of screen bigger than 650px ***************************/
-@media only screen and (min-width:650px){
+@media only screen and (min-width:700px){
   main{
     margin-bottom: 0px;
   }
+  .nav {
+    z-index:+1;
+    height: 3em;    
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position:fixed;
+    top:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
   .nav-links {
-    display: none;
-
-}
-.nav > .nav-links {
-display: none;
-}
-.nav{
-  margin-right: 2px;
-}
-  .timeline{
-    display:none;
+      display: none;
+  
   }
-  /* sna013*/
-
-.nav > .nav-btn {
-    display: none;
-}
-.nav-links2 {
-      display: inline;
-      float: right;
-      font-size: 18px;
-      color: black;
-}
-.nav > .nav-links2 {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links2 > a {
-  display: inline-block;
-  padding: 13px 10px 7px 10px;
-  text-decoration: none;
-  color: grey;
-}
-
-
-.nav > .nav-links2 > a,
-.nav > .nav-links2 > a:after,
-.nav > .nav-links2 >:before {
-transition: all .5s;
-}
-.nav > .nav-links2 > a {
-position: relative;
-}
-.nav > .nav-links2 > a:after {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-width: 0%;
-content: '.';
-color: transparent;
-background: #aaa;
-height: 1px;
-}
-.nav > .nav-links2 > a:hover:after {
-width: 100%;
-
-}
-
-.nav > #nav-check {
-display: none;
-}
-
-.subnav{
-  display:none;
-}
+  .nav > .nav-links {
+  display: none;
+  }
+  .nav{
+    margin-right: 2px;
+  }
+    .timeline{
+      display:none;
+    }
+  
+  .nav > .nav-btn {
+      display: none;
+  }
+  .nav-links2 {
+        display: inline;
+        float: right;
+        font-size: 18px;
+        color: black;
+  }
+  .nav > .nav-links2 {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links2 > a {
+    display: inline-block;
+    padding: 13px 10px 7px 10px;
+    text-decoration: none;
+    color: grey;
+  }
+  
+  
+  .nav > .nav-links2 > a,
+  .nav > .nav-links2 > a:after,
+  .nav > .nav-links2 >:before {
+  transition: all .5s;
+  }
+  .nav > .nav-links2 > a {
+  position: relative;
+  }
+  .nav > .nav-links2 > a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  }
+  .nav > .nav-links2 > a:hover:after {
+  width: 100%;
+  
+  }
+  
+  .nav > #nav-check {
+  display: none;
+  }
 
   #intro {
       width: 100vw;
@@ -526,81 +536,7 @@ display: none;
   main{
     margin-bottom: 0;
   }
- .nav {
-  z-index:+1;
-  height: 7%;    flex-direction: column;
-  width: 100%;
-  background-color: white;
-  position:fixed;
-  top:0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-.nav-links {
-    display: none;
-
-}
-.nav > .nav-links {
-display: none;
-}
-.nav{
-  margin-right: 2px;
-}
-  .timeline{
-    display:none;
-  }
-
-.nav > .nav-btn {
-    display: none;
-}
-.nav-links2 {
-      display: inline;
-      float: right;
-      font-size: 18px;
-      color: black;
-}
-.nav > .nav-links2 {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links2 > a {
-  display: inline-block;
-  padding: 13px 10px 7px 10px;
-  text-decoration: none;
-  color: grey;
-}
-
-
-.nav > .nav-links2 > a,
-.nav > .nav-links2 > a:after,
-.nav > .nav-links2 >:before {
-transition: all .5s;
-}
-.nav > .nav-links2 > a {
-position: relative;
-}
-.nav > .nav-links2 > a:after {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-width: 0%;
-content: '.';
-color: transparent;
-background: #aaa;
-height: 1px;
-}
-.nav > .nav-links2 > a:hover:after {
-width: 100%;
-
-}
-
-.nav > #nav-check {
-display: none;
-}
+ 
 .categorise {
       width:100vw;
       height:38vw;
